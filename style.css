@@ -1,0 +1,246 @@
+:root {
+    --hvid: #fff;
+    --cream: #F2EDE9;
+    --grå: #D5D5D5;
+    --mørkegrå: #858585; 
+    --lysegrå: #F7F7F7;
+    --sort: #0000; 
+}
+
+/*Generalle ting om hele siden*/ 
+  *{
+      padding: 0px;
+      margin: 0px;
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+  }
+
+/*Generalle ting om header*/ 
+  header{
+      background-color: var(--cream);
+      height: 75px;
+      width: 100%;
+  }
+
+/*Dropwon menuen på telefon*/ 
+/*for at lave denne er denne kilde brugt https://www.youtube.com/watch?v=bO9qHAhXbVA*/ 
+
+  nav.menu{
+    position: fixed;
+    text-align: center;
+    width: 160px;
+    height: auto;
+    top: 60px;
+    right: 25px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-hight 0.9s;
+    max-height: 0px;
+  }
+
+  header .menu ul{
+    list-style-type: none;
+  }
+
+  header .menu ul li{
+      border-bottom: 1px solid var(--sort);
+  }
+
+  nav.menu ul a {
+      background-color: var(--mørkegrå);
+      display: block;
+      padding-top: 5px;
+      color: var(--hvid);
+      text-decoration: none;
+      height: 2em;
+  }
+
+  nav.menu ul a:hover{
+      background-color: var(--mørkegrå);
+  }
+
+  header .burger_menu{
+    background:transparent;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+    padding: 20px 5px 0px 5px;
+}
+
+header .burger_menu .menu_icon{
+    background: var(--mørkegrå);
+    width: 100%;
+    height: 4px;
+    position: relative;
+}
+
+header .burger_menu .menu_icon::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--mørkegrå);
+    top: 10px;
+}
+
+header .burger_menu .menu_icon::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--mørkegrå);
+    top: -10px;
+}
+
+/*udarbejdelse af burgermenuen kan åbne og lukke*/
+header input.mobil_menu:checked ~ nav.menu{
+    max-height: 400px;
+}
+
+input.mobil_menu{
+    display: none;
+}
+/*style af nav SLUT*/ 
+
+
+/*Logo*/
+.logo_image{
+    position: left;
+    margin: 0;
+    text-align: center;
+    height: 60px;
+    width: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/*style til introen på forsiden*/
+
+.mig{
+    height: 200px;
+    padding-left: 25px;
+}
+
+.billede_mig{
+    background-color: var(--grå);
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+}
+.intro{
+    padding-bottom: 150px;
+}
+
+.tekst_intro{
+    background-color: var(--cream);
+    width: 300px;
+    margin: 20px;
+    padding: 45px;
+    position: absolute;
+}
+  
+/*style til introen slut*/
+
+/*style til project smutvej*/
+
+.project{
+    background-color: var(--cream);
+    padding: 50px;
+    
+}
+
+.project_bilede{
+    text-align: center;
+}
+
+.skole{
+    width: 300px;
+    position: right;
+    padding-right: 10px;
+}
+
+.tekst_project{
+    background-color: var(--grå);
+    padding: 20px;
+    text-align: left;
+    width: 290px;
+}
+
+.name{
+    text-align: center;
+    font-size: 20px;
+}
+
+.uddanelse{
+    text-align: center;
+    font-size: 15px;
+}
+
+.velkommen{
+    text-align: center;
+    font-size: 25px;
+}
+
+.name_project{
+    font-size: 30px;
+    position: absolute;
+}
+
+.læs{
+    color: var(--hvid);
+    padding-top: 50px;
+    text-decoration: none;
+}
+
+/*style til smutvej slut*/
+
+.cv{
+    padding-top: 50px;
+   padding-left: 25px;
+   padding-right: 25px;
+}
+
+.cv_indhold{
+    text-align: justify;
+   
+}
+.tekst_cv{
+    background-color: var(--cream);
+    text-align: left;
+    width: 300px;
+    height: 300px;
+}
+
+.coffie_img{
+    width: 200px;
+    float: right;
+}
+
+.school_img{
+    width: 300px;
+    position: right;
+    position: absolute;
+    padding-bottom: 100px;
+}
+
+.school_img .coffie_img{
+    margin: 10px;
+}
+
+.name_cv{
+    font-size: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.læs_cv{
+    padding-top: 50px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+
